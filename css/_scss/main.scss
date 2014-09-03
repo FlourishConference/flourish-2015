@@ -1,0 +1,199 @@
+// Colors based off of Base16 Ocean
+//      http://chriskempson.github.io/base16/#ocean
+
+$black:         #2b303b;
+$darkestgray:   #343d46;
+$darkergray:    #4f5b66;
+$darkgray:      #65737e;
+$lightgray:     #a7adba;
+$lightergray:   #c0c5ce;
+$lightestgray:  #dfe1e8;
+$white:         #eff1f5;
+
+$red:           #bf616a;
+$orange:        #d08770;
+$yellow:        #ebcb8b;
+$green:         #a3be8c;
+$cyan:          #96b5b4;
+$blue:          #8fa1b3;
+$purple:        #b48ead;
+$burntorange:   #ab7967;
+
+
+// open sans / gentium
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,800italic|Gentium+Book+Basic:400,400italic,700,700italic:Gentium+Basic:400,400italic,700,700italic);
+
+$font-sans: "Open Sans", sans-serif;
+$font-serif: "Gentium Book Basic", serif;
+
+$font-size: 18px; 
+
+@mixin iebox {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    background: $white;
+    margin: 0;
+    padding: 0;
+
+    font-family: $font-serif;
+    font-size: $font-size;
+}
+
+header {
+    background-color: $green;
+    background-image: url("../images/the-el1.jpg");
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1100px) {
+        background-size: 1100px;
+    }
+    
+    .info {
+        margin: 0 auto;
+        padding: 8em 0 6em;
+
+        width: auto;
+        text-align: center;
+        color: $white;
+
+        h1 {
+            font-size: 5em;
+            //font-family: $font-sans;
+            //text-transform: uppercase;
+            text-transform: lowercase;
+            font-style: italic;
+            font-weight: 900;
+            letter-spacing: -2px;
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .info-line {
+            margin: 1em auto 1.5em;
+            border: 0px solid white;
+            border-bottom: 3px solid $white;
+            width: 10em;
+        }
+
+        h2 {
+            font-size: 3em;
+            //font-weight: 400;
+            //font-style: italic;
+
+            padding: 0;
+            margin: 0;
+        }
+
+        h3 {
+            font-size: 1em;
+            font-weight: 400;
+            font-family: $font-sans;
+            letter-spacing: 10px;
+            text-transform: uppercase;
+
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
+nav.nav {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+
+    background: darken($black, 10%);
+    color: $white;
+
+    ul {
+        display: table;
+        width: auto;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+     
+        li {
+            //font-family: $font-sans;
+            text-transform: lowercase;
+            letter-spacing: 3px;
+
+            display: inline-block;
+            margin: .7em 2em .7em 0;
+            padding: .5em 0 .5em 2em;
+            border-left: 1px solid $darkestgray;
+
+            &:first-child {
+                border-left: 0px solid $black;
+            }
+
+            a {
+                color: $lightergray;
+                text-decoration: none;
+
+                &:hover {
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+article {
+    margin-top: 3em;
+}
+
+.intro {
+    @include iebox;
+
+    font-size: 1.5em;
+    text-align: center;
+
+    max-width: 800px;
+    width: 100%;
+    padding: 0 2em;
+    margin: 0 auto;
+}
+
+.actionbuttons {
+    @include iebox;
+
+    width: auto;
+    margin: 2em auto;
+    padding: 0 2em;
+
+    display: table;
+
+    a {
+        //width: 200px;
+        margin: 0 .5em;
+        padding: $font-size ($font-size * 2);
+
+        display: inline-block;
+
+        background-color: darken($black, 10%);
+        border-radius: 5px;
+
+        //font-size: 1.5em;
+        font-size: .8em;
+
+        color: $white;
+        text-decoration: none;
+
+        text-align: center;
+
+        font-family: $font-sans;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+
+        &:hover {
+            background-color: $black;
+        }
+    }
+}
+

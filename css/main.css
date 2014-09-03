@@ -1,0 +1,111 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,800,800italic|Gentium+Book+Basic:400,400italic,700,700italic:Gentium+Basic:400,400italic,700,700italic);
+body {
+  background: #eff1f5;
+  margin: 0;
+  padding: 0;
+  font-family: "Gentium Book Basic", serif;
+  font-size: 18px; }
+
+header {
+  background-color: #a3be8c;
+  background-image: url("../images/the-el1.jpg");
+  background-position: center center;
+  background-size: 100%;
+  background-repeat: no-repeat; }
+  @media (max-width: 1100px) {
+    header {
+      background-size: 1100px; } }
+  header .info {
+    margin: 0 auto;
+    padding: 8em 0 6em;
+    width: auto;
+    text-align: center;
+    color: #eff1f5; }
+    header .info h1 {
+      font-size: 5em;
+      text-transform: lowercase;
+      font-style: italic;
+      font-weight: 900;
+      letter-spacing: -2px;
+      margin: 0;
+      padding: 0; }
+    header .info .info-line {
+      margin: 1em auto 1.5em;
+      border: 0px solid white;
+      border-bottom: 3px solid #eff1f5;
+      width: 10em; }
+    header .info h2 {
+      font-size: 3em;
+      padding: 0;
+      margin: 0; }
+    header .info h3 {
+      font-size: 1em;
+      font-weight: 400;
+      font-family: "Open Sans", sans-serif;
+      letter-spacing: 10px;
+      text-transform: uppercase;
+      padding: 0;
+      margin: 0; }
+
+nav.nav {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #16181d;
+  color: #eff1f5; }
+  nav.nav ul {
+    display: table;
+    width: auto;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none; }
+    nav.nav ul li {
+      text-transform: lowercase;
+      letter-spacing: 3px;
+      display: inline-block;
+      margin: .7em 2em .7em 0;
+      padding: .5em 0 .5em 2em;
+      border-left: 1px solid #343d46; }
+      nav.nav ul li:first-child {
+        border-left: 0px solid #2b303b; }
+      nav.nav ul li a {
+        color: #c0c5ce;
+        text-decoration: none; }
+        nav.nav ul li a:hover {
+          color: #eff1f5; }
+
+article {
+  margin-top: 3em; }
+
+.intro {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: 1.5em;
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+  padding: 0 2em;
+  margin: 0 auto; }
+
+.actionbuttons {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: auto;
+  margin: 2em auto;
+  padding: 0 2em;
+  display: table; }
+  .actionbuttons a {
+    margin: 0 .5em;
+    padding: 18px 36px;
+    display: inline-block;
+    background-color: #16181d;
+    border-radius: 5px;
+    font-size: .8em;
+    color: #eff1f5;
+    text-decoration: none;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .actionbuttons a:hover {
+      background-color: #2b303b; }
