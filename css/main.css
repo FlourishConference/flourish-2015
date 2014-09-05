@@ -10,17 +10,20 @@ header {
   background-color: #a3be8c;
   background-image: url("../images/the-el1.jpg");
   background-position: center center;
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat; }
   @media (max-width: 1100px) {
     header {
       background-size: 1100px; } }
   header .info {
     margin: 0 auto;
-    padding: 8em 0 6em;
+    padding: 5em 0 6em;
     width: auto;
     text-align: center;
     color: #eff1f5; }
+    header .info img {
+      width: 150px;
+      margin-bottom: 3em; }
     header .info h1 {
       font-size: 5em;
       text-transform: lowercase;
@@ -75,7 +78,12 @@ nav.nav {
           color: #eff1f5; }
 
 article {
-  margin-top: 3em; }
+  width: 100%;
+  max-width: 800px;
+  margin: 3em auto 4em; }
+  article h1 {
+    font-size: 2em;
+    text-align: center; }
 
 .intro {
   -moz-box-sizing: border-box;
@@ -109,3 +117,28 @@ article {
     letter-spacing: 1px; }
     .actionbuttons a:hover {
       background-color: #2b303b; }
+
+.sponsor {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 50%; }
+  .sponsor.right {
+    float: right;
+    padding-left: 2em; }
+  .sponsor.left {
+    clear: both;
+    padding-right: 2em;
+    float: left; }
+  .sponsor.center {
+    margin: 0 25%;
+    clear: both; }
+  .sponsor h2, .sponsor h3 {
+    text-align: center; }
+  .sponsor h2 {
+    padding-bottom: 0;
+    margin-bottom: 0; }
+  .sponsor h3 {
+    padding-top: 0;
+    margin-top: 0; }
+  .sponsor ul li {
+    margin-bottom: .5em; }
