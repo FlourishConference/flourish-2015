@@ -8,13 +8,10 @@ body {
 
 header {
   background-color: #a3be8c;
-  background-image: url("../images/the-el1.jpg");
+  background-image: url("../images/cna-1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; }
-  @media (max-width: 1100px) {
-    header {
-      background-size: 1100px; } }
   header .info {
     margin: 0 auto;
     padding: 5em 0 6em;
@@ -22,7 +19,7 @@ header {
     text-align: center;
     color: #eff1f5; }
     header .info img {
-      width: 150px;
+      width: 250px;
       margin-bottom: 3em; }
     header .info h1 {
       font-size: 5em;
@@ -32,6 +29,8 @@ header {
       letter-spacing: -2px;
       margin: 0;
       padding: 0; }
+      header .info h1 .char2 {
+        margin-left: 1px; }
     header .info .info-line {
       margin: 1em auto 1.5em;
       border: 0px solid white;
@@ -85,7 +84,7 @@ article {
     font-size: 2em;
     text-align: center; }
 
-.intro {
+.intro p {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   font-size: 1.5em;
@@ -94,15 +93,14 @@ article {
   width: 100%;
   padding: 0 2em;
   margin: 0 auto; }
-
-.actionbuttons {
+.intro .actionbuttons {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: auto;
   margin: 2em auto;
   padding: 0 2em;
   display: table; }
-  .actionbuttons a {
+  .intro .actionbuttons a {
     margin: 0 .5em;
     padding: 18px 36px;
     display: inline-block;
@@ -115,7 +113,7 @@ article {
     font-family: "Open Sans", sans-serif;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    .actionbuttons a:hover {
+    .intro .actionbuttons a:hover {
       background-color: #2b303b; }
 
 .sponsor {
